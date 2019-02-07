@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--Questions:
+1. Как сделать для контактов отступ вправо, а текст что-бы был по левому краю(без margin)?
+2. Как разместить текст по центру относительно фото - !!!!!!!!!!!!!!!!!!!Сделать каждой фотке с текстов по div.
+4. Как в подменю добавить подменю?
+5. Как сделать выползание подменю четко под кнокой меню-->
+<html>
+<head>
+	<title>Homework 3</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			background-image: url(file:///C:/Users/nikit/Desktop/Cources/foto/main-bg.png);
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			background-color: white;
+			max-width: 1000px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Сделать везде ширину через margin auto 20px*/
+			height: 173.5px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin: auto;
+		}
+		.logo {
+			display: flex;
+			flex-direction: column-reverse;
+			margin-left: 10px;
+		}
+		.header-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			color: lightblue;
+			padding-left: 240px;
+		}
+		.flags {
+			display: flex;
+			flex-direction: row;
+		}
+		.flags a img{
+			display: block;
+		}
+		.flags a span{
+			display: flex;
+			margin: 5px;
+		}
+		.header2 {
+			display: flex;
+			justify-content: center;
+		}
+		 .menu {
+		 	padding-left: 0px;
+		 	display: flex;
+		 	justify-content: center;
+	      	background-color: black;
+	      	width: 1000px;
+	      	margin: auto; 	 
+	    }
+	   ul {
+		    display: flex;
+		    list-style: none; /* Для списка убираем маркеры */
+		    font-family: Arial; /* Рубленый шрифт для текста меню */
+		    font-size: 10pt; /* Размер названий в пункте меню */
+	   }
+	   .menu > ul{
+	   	padding-left: 0px;
+	   }
+	   li ul {
+		    position: absolute; /* Подменю позиционируются абсолютно */
+		    display: none; /* Скрываем подменю */
+	   }
+	   li a {
+		    display: flex; /* Ссылка как блочный элемент */
+		    margin: 5px;
+		    padding: 5px; /* Поля вокруг надписи */
+		    text-decoration: none; /* Подчеркивание у ссылок убираем */
+		    color: white; /* Цвет текста */
+		    border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
+		    background-color: #676768; /* Цвет фона */
+		    border-bottom: none; /* Границу снизу не проводим */
+	   }
+	   li a:hover {
+		    color: #ffe; /* Цвет текста активного пункта */
+		    background-color: #5488af; /* Цвет фона активного пункта */
+	   }
+	   li:hover ul { 
+	    	display: block; /* При выделении пункта курсором мыши отображается подменю */
+	   }
+	   .menu li ul {
+	   		padding-left: 0px;
+	   }
+	   .brd {
+	   		border-bottom: 1px solid #ccc; /* Линия снизу */
+	   }
+	   .block {
+	   		display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			background-color: white;
+			width: 1000px;
+			height: 500px;
+	      	margin: auto;
+		}
+		.b1 {
+			background-color: grey;
+			width: 200px;
+			border-top: 2px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+			<a class="logo" href="https://www.google.com/search?q=png+20px&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjH17S_yYngAhWEYlAKHa7ZB2sQ_AUIDigB&biw=1536&bih=723#imgrc=yA-owjxYiVTUwM:">
+				<img src="file:///C:/Users/nikit/Desktop/Cources/foto/logo.png">
+			</a>
+			<div class="header-info">
+				<div class="contact-info">
+					<a>Наши контакты:</a>
+					<a>+380987654321</a>
+					<a>+380987638376</a>
+					<a>lessons@mail.com</a>
+				</div>
+				<div class="flags">
+				<a>
+					<img style="padding-left: 4px" src="file:///C:/Users/nikit/Desktop/Cources/foto/flag-b.png">
+					<span>Бутан</span>
+				</a>
+				<a>
+					<img style="padding-left: 6px" src="file:///C:/Users/nikit/Desktop/Cources/foto/flag-i.png">
+					<span>Индия</span>
+				</a>
+				<a>
+					<img style="padding-left: 19px" src="file:///C:/Users/nikit/Desktop/Cources/foto/flag-m.png">
+					<span>Мальдивы</span>
+				</a>
+				<a>
+					<img style="padding-left: 5px" src="file:///C:/Users/nikit/Desktop/Cources/foto/flag-n.png">
+					<span>Непал</span>
+				</a>
+				<a>
+					<img style="padding-left: 25px" src="file:///C:/Users/nikit/Desktop/Cources/foto/flag-s.png">
+					<span>Шри-Ланка</span>
+				</a>
+				<a>
+					<img style="padding-left: 4px" src="file:///C:/Users/nikit/Desktop/Cources/foto/flag-t.png">
+					<span>Тибет</span>
+				</a>
+				</div>
+			</div>
+	</header>
+	<div class="header2">
+		<img src="file:///C:/Users/nikit/Desktop/Cources/foto/banner.png">
+	</div>
+	<ul class="menu">
+   <li><a href="russian.html" class="brd">Главная</a></li> 
+   <li><a href="ukrainian.html" class="brd">Путешествия<img src="file:///C:/Users/nikit/Desktop/Cources/foto/white-triangle.png" style="padding: 4px" width="10px"></a> 
+    <ul> 
+     <li><a href="linku1.html">Европа</a></li> 
+     <li><a href="linku2.html">Азия</a></li> 
+     <li><a href="linku3.html">Африка</a></li> 
+     <li><a href="linku4.html" class="brd">Америка</a></li> 
+    </ul> 
+   </li>
+   <li><a href="caucasus.html" class="brd">Услуги<img src="file:///C:/Users/nikit/Desktop/Cources/foto/white-triangle.png" style="padding: 4px" width="10px"></a> 
+    <ul> 
+     <li><a href="linkc1.html">Автобусный тур</a></li> 
+     <li><a href="linkc2.html">All Inclusive</a></li> 
+     <li><a href="linkc3.html">Экстрим</a></li> 
+     <li><a href="linkc4.html" class="brd">Сафари</a></li> 
+    </ul> 
+   </li> 
+  </ul>
+  <div class="block">
+  	<div class="b1"><center><h3>News</h3></center></div>
+  	<div class="b1"><center><h3>Stories</h3></center></div>
+  </div>
+</body>
+</html>

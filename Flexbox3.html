@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8"><!--Спросить что такое http-equiv="content-type"-->
+	<meta name="description" content="Краткое описание">
+	<meta name="keywords" content="дз, домашка, слова, который, есть, в, тексте"><!--узнать используются ли на стр. ключевые слова и краткое описание-->
+	<title>Flexbox</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			display: flex;/*Обращение ко всему меню*/
+			background-color: grey;
+		}
+		.header .logo {
+			margin-left: 40px;
+			margin-top: 5px;
+			width: 65px;
+			font-family: Arial;
+		}
+		.header .menu ul {
+			display: flex;/*Обращение к списку*/
+			list-style: none;/*убирает точки со писка*/
+		}
+		.header .menu ul li{
+			margin: 0 0 0 10px;
+		}
+		.header .menu ul a/*обращение к a убирает нижнее подчеркивание*/ {
+			text-decoration: none;
+			color: black;
+		}
+		.search {
+			margin: 10px 0 10px 350px;
+			width: 200px;
+		}
+		.knopki {
+			margin: 15px 5px 0 470px;
+		}
+		.sidebar {
+			overflow: auto;/*Добавляет скрол в меню*/
+			width: 150px;
+			height: 300px;
+			float: left;
+			margin-top: 82px;
+			margin-right: 10px;
+			display: inline-flex;
+			background-color: grey;
+		}
+		.sidebar .menu1 ul {
+			list-style: none;
+			padding-left: 35px;
+			padding-right: 20px;
+		}
+		.sidebar .menu1 ul li {
+			margin-top: 15px;
+			margin-bottom: 40px;
+		}
+		.sidebar .menu1 ul a {
+			text-decoration: none;
+			color: black
+		}
+		.text {
+			margin-left: 160px;
+		}
+		.photo {
+			margin-right: 20px;
+			margin-left: 10px;
+			float: right;	
+		}
+		.footer {
+			margin-top: 650px;
+			display: flex;
+			justify-content: space-around;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="C:/Users/nikit/Desktop/Cources/img/used_20px_551286.png">
+		</div><!--Доделать!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+		<nav class="menu"><!--class это обращение CSS to HTML .; id это обращение JS to HTML #-->
+		<ul><!--ul это список, в ul всегда помещаем li-->
+			<li><button><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">HOME</a></button></li>
+			<li><button><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Contacts</a></button></li>
+			<li><button><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox3.html">About us</a></button></li>
+		</ul>
+		</nav>
+		<input type="text" name="search" placeholder="Search" class="search"><!--input это форма для ввода; placeholder это текст-подсказка; name it's a history-->
+		<div class="knopki">
+		<button class="login">Log In</button>
+		<button class="singup">Sing Up</button>
+		</div>
+	</header>
+		<div class="sidebar">
+			<nav class="menu1"><!--class это обращение CSS to HTML .; id это обращение JS to HTML #-->
+			<ul><!--ul это список, в ul всегда помещаем li-->
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 1</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 2</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 3</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 4</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 5</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 6</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 7</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 8</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 9</a></li>
+				<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 10</a></li>
+		</ul>
+		</nav>
+		</div>
+		<div class="text">
+			<p><h1><center>Hi</center></h1>
+			В 1817 году немецкий профессор барон Карл фон Дрез из Карлсруэ создал, а в 1818 запатентовал первый двухколёсный самокат, который он назвал «машиной для бега» (Laufmaschine). Самокат Дреза был двухколёсным, снабжён рулём и выглядел в целом, как велосипед без педалей; рама была деревянной.</br>
+
+			С 1870-х годов стала приобретать популярность схема «пенни-фартинг». Название описывает несоразмерность колёс, ибо монета пенни была намного больше фартинга.</br>
+
+			Первый велосипед, похожий на используемые в наши дни, назывался Rover — «Скиталец» (или «Бродяга»). Он был сделан в 1884 году английским изобретателем Джоном Кемпом Старли и выпускался с 1885 года. В отличие от велосипеда «пенни-фартинг», Ровер обладал цепной передачей на заднее колесо, одинаковыми по размеру колёсами, и водитель сидел между колёсами.</br>
+
+			Первый складной велосипед сделан в 1878 году, первые алюминиевые — в 1890-х годах, а первый лигерад (иногда называемый рикамбент, велосипед, на котором можно ездить в лежачем положении) — в 1895 году (а в 1914 году началось массовое производство лигерадов фирмой «Пежо»).</br>
+
+			Велосипеды продолжали совершенствоваться и во второй половине XX века. В 1974 году началось массовое производство велосипедов из титана, а в 1975 — из углепластика. В 1983 году был изобретён велокомпьютер. В начале 1990-х получили распространение системы индексного переключения скоростей.
+			Производство велосипедов сыграло большую роль в создании технической базы для других видов транспорта, прежде всего автомобилей и самолётов.
+			<img src="C:\Users\nikit\Desktop\Cources\maxresdefault.jpg" width="350" height="200" class="photo" alt="Bike" title="Bike111">
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="footer">
+		<div class="foote">
+			<p>Сайт сделан для практики навыков:</br>CSS</br>Html</p>
+		</div>
+		<div class="foot">
+			<p>Сайт сделан для практики навыков:</br>CSS</br>Html</p>
+		</div>
+		<div class="foo">
+			<p>Сайт сделан для практики навыков:</br>CSS</br>Html</p>
+		</div>
+	</footer>
+</body>
+</html>

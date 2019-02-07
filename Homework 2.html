@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8"><!--Спросить что такое http-equiv="content-type"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	<meta name="description" content="Краткое описание">
+	<meta name="keywords" content="дз, домашка, слова, который, есть, в, тексте"><!--узнать используются ли на стр. ключевые слова и краткое описание!!!!!!!-->
+	<title>Homework 2</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(https://www.meme-arsenal.com/memes/c3fdad4d3f513c4d3677a9b996789718.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+            background-repeat-y: repeat;
+		}
+		button {
+			border: 5px solid lightblue;
+			background-color: lightblue;
+
+		}
+		.header {
+			display: flex;/*Обращение ко всему меню*/
+			background-color: grey;
+		}
+		.header .logo {
+			margin-left: 40px;
+			margin-top: 5px;
+			width: 65px;
+			font-family: Arial;
+		}
+		.header .menu ul {
+			display: flex;/*Обращение к списку*/
+			list-style: none;/*убирает точки со писка*/
+		}
+		.header .menu ul li{
+			margin: 0 0 0 10px;
+		}
+		.header .menu ul a/*обращение к a убирает нижнее подчеркивание*/ {
+			text-decoration: none;
+			color: black;
+		}
+		.search {
+			margin: 10px 0 10px 270px;
+			width: 200px;
+		}
+		.knopki {
+			margin: 15px 5px 0 520px;
+		}
+		.sidebar {
+			overflow: auto;/*Добавляет скрол в меню*/
+			width: 150px;
+			height: 300px;
+			float: left;
+			margin-top: 5px;
+			margin-right: 10px;
+			display: inline-flex;
+			background-color: grey;
+		}
+		.sidebar .menu1 ul {
+			list-style: none;
+			padding-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;			
+		}
+		.sidebar .menu1 ul li {
+		font-size: 15px;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		padding-right: 40px;
+		padding-left: 35px;
+		border-top: 5px solid yellow;
+		}
+		.sidebar .menu1 ul a {
+			text-decoration: none;
+			color: black
+		}
+		.text {
+			padding-left: 5px;
+		}
+		.photo {
+			margin-right: 20px;
+			margin-left: 10px;
+			float: right;	
+			display: block;/*Фото будет блочным а не строчным, проще потом настраивать*/
+		}
+		.footer {
+			margin-top: 650px;
+			display: flex;
+			justify-content: space-around;
+			background-color: lightblue;
+		}
+		.menu1 ul li:first-child {
+			border-top: none;
+		}
+		.header .menu ul a:hover {
+			font-size: 20px;
+			color: red;
+   		} 
+   	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox3.html"><img src="C:/Users/nikit/Desktop/Cources/img/used_20px_551286.png"></a><!--Привязать к фото страницу!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+		</div>
+			<nav class="menu"><!--class это обращение CSS to HTML .; id это обращение JS to HTML #-->
+				<ul><!--ul это список, в ul всегда помещаем li-->
+					<li><button><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">HOME</a></button></li>
+					<li><button><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Contacts</a></button></li>
+					<li><button><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox3.html">About us</a></button></li>
+				</ul>
+			</nav>
+		<input type="text" name="search" placeholder="Search" class="search"><!--input это форма для ввода; placeholder это текст-подсказка; name it's a history-->
+		<div class="knopki">
+			<button class="login">Log In</button>
+			<button class="singup">Sing Up</button>
+		</div>
+	</header>
+		<div class="text">
+			<h1><center>Hi</center></h1>
+			В 1817 году немецкий профессор барон Карл фон Дрез из Карлсруэ создал, а в 1818 запатентовал первый двухколёсный самокат, который он назвал «машиной для бега» (Laufmaschine). Самокат Дреза был двухколёсным, снабжён рулём и выглядел в целом, как велосипед без педалей; рама была деревянной.</br>
+
+			С 1870-х годов стала приобретать популярность схема «пенни-фартинг». Название описывает несоразмерность колёс, ибо монета пенни была намного больше фартинга.</br>
+		</div>
+		<div class="sidebar">
+			<nav class="menu1"><!--class это обращение CSS to HTML .; id это обращение JS to HTML #-->
+				<ul><!--ul это список, в ul всегда помещаем li-->
+					<li class="product1"><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 1</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 2</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 3</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 4</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 5</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 6</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 7</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox2.html">Product 8</a></li>
+					<li><a href="file:///C:/Users/nikit/Desktop/Cources/Flexbox.html">Product 9</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="text">
+			Первый велосипед, похожий на используемые в наши дни, назывался Rover — «Скиталец» (или «Бродяга»). Он был сделан в 1884 году английским изобретателем Джоном Кемпом Старли и выпускался с 1885 года. В отличие от велосипеда «пенни-фартинг», Ровер обладал цепной передачей на заднее колесо, одинаковыми по размеру колёсами, и водитель сидел между колёсами.</br>
+
+			Первый складной велосипед сделан в 1878 году, первые алюминиевые — в 1890-х годах, а первый лигерад (иногда называемый рикамбент, велосипед, на котором можно ездить в лежачем положении) — в 1895 году (а в 1914 году началось массовое производство лигерадов фирмой «Пежо»).</br>
+
+			Велосипеды продолжали совершенствоваться и во второй половине XX века. В 1974 году началось массовое производство велосипедов из титана, а в 1975 — из углепластика. В 1983 году был изобретён велокомпьютер. В начале 1990-х получили распространение системы индексного переключения скоростей.
+			Производство велосипедов сыграло большую роль в создании технической базы для других видов транспорта, прежде всего автомобилей и самолётов.</br>
+			<img src="C:\Users\nikit\Desktop\Cources\maxresdefault.jpg" width="350" height="200" class="photo" alt="Bike" title="Bike111">
+			Многие технологии металлообработки, разработанные для производства как велосипедных рам, так и других частей велосипедов (шайб, подшипников, зубчатых колёс), впоследствии использовались в производстве автомобилей и самолётов. Многие автомобильные фирмы, созданные в начале XX века (например, Rover, Шкода, Morris Motor Company, Опель), начинали как велосипедные. Начинали как производители велосипедов также Братья Райт.</br>
+
+			Общества велосипедистов добивались улучшения качества дорог. Примером такой организации является Лига Американских Любителей Колёсного Транспорта (League of American Wheelmen), в конце XIX века в США возглавлявшая и финансировавшая Движение за Хорошие Дороги (Good Roads Movement). Улучшение качества дорог также ускорило развитие автомобилей.</br>
+
+			Велосипеды сыграли свою роль в эмансипации женщин. В частности, благодаря им в 1890-х в моду вошли женские шаровары, что помогло освободить женщин от корсетов и другой сковывающей одежды. Кроме того, благодаря велосипедам женщины обрели беспрецедентную мобильность.
+		</div>
+	<footer class="footer">
+		<div>
+			<p>Сайт сделан для практики навыков:</br>CSS</br>Html</p>
+		</div>
+		<div>
+			<p>Сайт сделан для практики навыков:</br>CSS</br>Html</p>
+		</div>
+		<div>
+			<p>Сайт сделан для практики навыков:</br>CSS</br>Html</p>
+		</div>
+	</footer>
+</body>
+</html>
