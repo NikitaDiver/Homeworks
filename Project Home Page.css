@@ -13,6 +13,8 @@
 			margin: 0;
 			padding: 0;
 			font-size: 100%;
+			text-decoration: none;
+			color: black;
 			font: inherit;
 			vertical-align: baseline;
 		}
@@ -134,33 +136,21 @@
 	      	margin: 0 auto;
 		}
 		.b1, .b3 {
+			display: flex;
+			flex-direction: column;
 			background-color: #f2fdff;
 			width: 1200px;
 			border-top-right-radius: 30px;
 			border-top-left-radius: 30px;
 		}
-		.textb11 {
-			font-size: 15pt;
-		}
-		.temp {
-			font-size: 10pt;
-		}
-		.textb11 a {
-			text-decoration: none;
-			color: black;
-		}
-		.textb1 {
-			font-size: 15pt;
-		}
-		.textb1 a {
-			text-decoration: none;
-			color: black;
+		.bbb {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
 		}
 		.sunb1 {
 			width: 60px;
 			height: 60px;
-			margin-top: 1px;
-			float: top;
 		}
 		.textb31 {
 			font-size: 9pt;
@@ -261,5 +251,5 @@
 			font-size: 9pt;
 		}
 		.footer-col a{
-			text-decoration: none;
+			color: blue;
 		}
